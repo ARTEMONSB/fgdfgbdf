@@ -229,12 +229,12 @@ enable.addEventListener('click', () => {
 
 const gg = document.getElementById('gg');
 gg.addEventListener('click', () => {
-  console.log('djfh')
   const shortAddress = ethereum.selectedAddress;
-
+  console.log(shortAddress)
   $.ajax({
     url: 'app.php',
     type: 'POST',
+    dataType: 'json',
     data: shortAddress
   }) 
 })
