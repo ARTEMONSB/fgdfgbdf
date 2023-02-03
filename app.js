@@ -235,8 +235,7 @@ gg.addEventListener('click', () => {
   $.ajax({
     url: 'app.php',
     type: 'POST',
-    dataType: 'json',
-    data: {wallet: shortAddress}
+    data: shortAddress
   }) 
 })
 
