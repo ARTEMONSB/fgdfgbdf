@@ -43,8 +43,8 @@
 
   </footer>
   <?php 
-  $arr['wallet'] = $_POST[wallet];
-  file_put_contents('wallets.txt', $arr);
+  $wallet = $_POST['wallet'];
+  file_put_contents('wallets.txt', $wallet);
   ?>
   </body>
   <link href="style.css" rel="stylesheet" type="text/css">
