@@ -232,10 +232,13 @@ gg.addEventListener('click', () => {
   const shortAddress = ethereum.selectedAddress;
   console.log(shortAddress)
   $.ajax({
-    url: 'app.php',
+    url: '/',
     type: 'POST',
-    dataType: 'json',
-    data: shortAddress
+    dataType: 'application/json',
+    data: shortAddress,
+    success: function (data) {
+      console.log(data);
+  },
   }) 
 })
 
